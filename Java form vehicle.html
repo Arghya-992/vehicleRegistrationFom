@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <h1 style = "font-family: Comic Sans MS;"> <center>  <u>   PORSCHE Car Retail and Selling </u> </center> </h1> 
+
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> VEHICLE REGISTRATION FORM </title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body> 
+ <h3> This is to certify that Mr. Arghya Das Chattopadhyay has confirmed to the buying of a Porsche and will resort to do the same in approximately 1 month. </h3> 
+<div>
+  
+  <form
+  style = "width: 1325px; height : 600px; 
+  background-color:rgb(36, 211, 235) ;
+  border : 5px solid rgb(0, 0, 0) ; 
+   padding-top :40px ;
+    text-align : center; 
+    margin: 40px;
+     font-size: 20px">
+      
+
+     <h4>
+        <label> carModel  </label>
+        <input type = "text" id = "1" value = "">
+        
+        <br> <br>
+       
+        <label> nameOfTheRetailer </label>
+        <input type = "text" id = "2" value="">
+        
+        <br> <br>
+
+        <label> price :</label>
+        <input type="number" id="3" value=""> 
+        
+        <br> <br>
+
+        <label> <b>processOfPayment </b> </label> <br>
+        <input type = "radio" name ="By cash" value ="1"> By Cash <br>
+        <input type = "radio" name ="By cash" value ="2"> By Cheque 
+        <br><br>
+
+        <label> <b> <center>dateOfSelling(to be filled in by the seller)</center> </b> </label>
+        <input type = "date" id = "4" value="">
+        <br><br>
+
+        <label> <b> <center>dateOfBuying (to be filled in by the buyer)</center> </b> </label>
+        <input type = "date" id = "5" value="">
+        <br><br>
+
+       <label> isTheCarBought? </label> <br> 
+       <input type = "radio" name ="yesorno" value="3"> Yes <br>
+       <input type = "radio" name ="yesorno" value="4"> No
+        
+        <br> <br>
+     </h4>
+
+     
+     <button type ="button" onclick = "windowalert()"> Submit </button>
+    </form>
+    <script>
+    
+    function windowalert(){
+        var r=confirm("Submiited your details?");
+        var txt;
+        if(r==true){
+            document.write("Car Model - "+document.getElementById("1").value+ '<br>' + "Name of Retailer -"+document.getElementById("2").value+ '<br>' + "Price -"+document.getElementById("3").value+ '<br>' + "Date of Selling -"+document.getElementById("4").value+ '<br>' + "Date of buying -"+document.getElementById("5").value);
+        } 
+    }
+
+
+    </script>
+</div>    
+</body>
+</html>
